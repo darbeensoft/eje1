@@ -1,0 +1,221 @@
+.dp__navbar {
+    display: flex;
+    margin: 27px auto 0;
+    position: relative;
+    width: 958px;
+    height: 80px;
+    background-color: #f1f1f1;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.dp__menu {
+    font-size: 1.1rem;
+    color: #626262;
+    font-weight: 600;
+    text-align: center;
+    padding: 27px 0px;
+    text-decoration: none;
+    border-right: 1px solid #ddd;
+    clip-path: polygon(0% 0%, 94% 0%, 99% 50%, 94% 100%, 0% 100%);
+    width: calc(100% / 3);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.dp__menu:last-child {
+    border-right: none;
+    clip-path: none;
+    border-top-right-radius: 20px; 
+}
+
+.dp__menu:first-child {
+    border-top-left-radius: 20px; 
+}
+
+.dp__menu:hover {
+    background-color: #DD0034;
+    color: #fff;
+    cursor: pointer;
+}
+
+.dp__navbar .active {
+    background-color: #DD0034;
+    color: white;
+}
+
+.dp__menu a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.icono-menu {
+    width: 27px;
+    height: 27px;
+    margin-right: 14px;
+    margin-left: -51px;
+    align-items: center;
+    vertical-align: middle;
+}
+
+/* formulario */
+.dp__content{
+    width: 911px;
+    margin-left: 23px ;
+    margin-right: 23px ;
+}
+.dp__form-header{
+    align-items: center;
+    width: 887px;
+    margin-bottom: 40px;
+}
+
+.dp__img-content{
+    display: flex;
+    flex-direction: row;
+}
+.dp__img-image{
+    width: 65px;
+    height: 65px;
+}
+.dp__img-title{
+    margin-left: 107px;
+    margin-bottom: -20px;
+    font-size: 1.2rem;
+    color: #333;
+}
+.archive__title{
+    font-size: 18px;
+}
+.dp__img-content {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+  }
+  
+  .dp__img-image {
+    margin-right: 10px;
+  }
+  .dp__img-desc{
+    font-size: 14px;
+    margin-left: 107px;
+    color: #3D3D3D;
+  }
+  
+  .dp__img-file,
+  .dp__img-file::before,
+  .dp__img-file input[type="file"],
+  .file-name {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dp__img-file::before {
+    background-color: white;
+    color: #2377A2;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    content: 'Seleccionar archivo';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    width: 163px;
+    height: 41px;
+    border: 2px solid #3888CE;
+    margin-left: 15px;
+  }
+  
+  .dp__img-file input[type="file"] {
+    opacity: 0;
+    width: 163px;
+    height: 41px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    margin-right: 4px;
+  }
+  
+  .file-name {
+    font-size: 16px;
+    background-color: white;
+    padding: 14px 24px;
+    border-top: none;
+    border-radius: 0 0 3px 3px;
+    color: #3D3D3D;
+    font-weight: 500;
+    margin-top: 0;
+    margin-left: 15px;
+  }
+  .dp__form-content{
+    display: flex;
+    flex-direction: row;
+  }
+  .content__left{
+    margin-right: 19px;
+    
+  }
+ 
+  .dp__form-group{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dp__form-input {
+   top: 545px;
+   left: 228px;
+   width: 436px;
+   height: 52px;
+   border: none;
+   outline: none;
+   background-color: #F1F1F1;
+   border-bottom: 2px solid #E8E8E8;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+   margin-bottom: 26px;
+   font-family: sans-serif;
+}
+.dp__form-label{
+    color: #626262;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.dp__form-input::placeholder {
+    padding-left: 20px;
+    color: #8A8A8A; 
+    font-size: 14px; 
+  }
+
+  .dp__form-group .dp__form-input:not(:placeholder-shown) {
+    color: #8A8A8A; 
+    font-size: 16px;
+    padding-left: 20px;
+
+  }
+  
+  .dp__form-input--sinfondo {
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid #AFAFAF;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    color: #3D3D3D;
+}
+  

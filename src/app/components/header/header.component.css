@@ -1,0 +1,40 @@
+.layout__header {
+    margin: 0 auto;
+    width: 1366px;
+    height: 55px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.header__logo {
+    margin: 0.2rem 1.2rem;
+}
+.logo__img {
+    width: 131.33px;
+    margin-left: 3rem;
+}
+
+.main__header-content {
+    margin: 0 auto;
+    width: 958px;
+    height: 43px;
+}
+
+.header-title__title {
+    text-align: left;
+    font-family: adobe-clean, sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #3D3D3D;
+    margin-bottom: 0rem;
+}
+
+.header-tile__description {
+    margin-top: 0.9rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #3D3D3D;
+}
+.layout__main{
+    margin-top:1rem;
+}
