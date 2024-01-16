@@ -275,9 +275,9 @@
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    width: 18px; /* Ajusta el ancho del checkbox */
-    height: 18px; /* Ajusta la altura del checkbox */
-    border: 2px solid #626262; /* Color y grosor del borde */
+    width: 18px; 
+    height: 18px; 
+    border: 2px solid #626262; 
     border-radius: 3px;
     margin-right: 8px;
     outline: none;
@@ -285,14 +285,14 @@
   }
 
   .dp__form-input-check:checked::before {
-    content: "\2713"; /* Unicode character for checkmark */
+    content: "\2713"; 
     display: block;
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black; /* Color del chulito */
-    font-size: 13px; /* Tamaño del chulito */
+    color: black; 
+    font-size: 13px; 
   }
 
   .dp__form-label-check {
