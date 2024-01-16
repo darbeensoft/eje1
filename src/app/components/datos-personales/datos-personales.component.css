@@ -218,4 +218,35 @@
     -o-border-radius: 0;
     color: #3D3D3D;
 }
+.btns__form{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 40px;
+  margin-top: 83px;
+  margin-left: 297px;
+}
+
+.btn__cancel{
+  font-size: 18px;
+  width: 298px;
+  height: 60px;
+  color: #2377A1;
+  border: 2px solid #91BBD0;
+  border-radius: 4px;
+  opacity: 1;
+  background-color: white;
+ 
+}
+
+.btn__next{
+  font-size: 18px;
+  width: 298px;
+  height: 60px;
+  color: white;
+  border: 1px solid #91BBD0;
+  border-radius: 4px;
+  opacity: 1;
+  background-color: #DD0034;
+}
   

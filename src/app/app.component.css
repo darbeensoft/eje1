@@ -20,7 +20,9 @@ body{
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    
 }
+
 
 ul, ol{
     list-style: none;
@@ -129,7 +131,13 @@ body {
     margin: 0 auto;
     margin-top: 5.5rem;
     width: 100%;
+    margin-left: 9px;
     /* border: 1px solid grey; */
+}
+.subtitle__description{
+    font-size: 18px;
+    line-height: 1.1;
+    margin-bottom: 48px;
 }
 
 /* content */
@@ -144,7 +152,7 @@ body {
     margin: 11.5rem auto;
     margin-left: 313px;
     margin-top: 2.3rem;
-    margin-bottom: 10rem;
+    margin-bottom: 9.5rem;
     /* display: grid; */
     /* grid-template-areas:        "header content footer";
     grid-template-rows: 10% 60% 30%; */
@@ -163,10 +171,11 @@ body {
     width: 1366px;
     height: 288px;
     margin: 0 auto;
-    border: 1px solid gray;
+    border: 1px solid transparent;
     margin-top: 7rem;
     background-color: #3D3D3D;
     margin-top: 2rem;
+    margin-left: 109px;
 }
 .footer__image{
     position: absolute;
