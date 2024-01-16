@@ -1,16 +1,15 @@
-.layout__content {
-  position: relative; 
-  width: 958px;
-  height: 942px;  
-  margin: 11.5rem auto;
-  margin-left: 313px;
-  margin-top: 2.3rem;
-  margin-bottom: 9.5rem; 
-  border-radius: 1.2rem; 
-  box-shadow: 0px 4px 30px -20px rgba(0, 0, 0, 0.9);   
- 
-}
-.dp__navbar {
+/* .layout__content {
+    position: relative;    
+    width: 958px;
+    height: 445px;
+    margin: 11.5rem auto;
+    margin-left: 313px;
+    margin-top: 2.3rem;
+    margin-bottom: 9.5rem;   
+    border-radius: 1.2rem;    
+    box-shadow: 0px 4px 30px -20px rgba(0, 0, 0, 0.9);      
+} */
+/* .dp__navbar {
     display: flex;
     margin: 27px auto 0;
     position: relative;
@@ -33,6 +32,7 @@
     width: calc(100% / 3);
     box-sizing: border-box;
     text-align: center;
+    cursor: pointer;
 }
 
 .dp__menu:last-child {
@@ -72,13 +72,14 @@
     margin-left: -51px;
     align-items: center;
     vertical-align: middle;
-}
+} */
 
 /* formulario */
 .dp__content{
     width: 911px;
     margin-left: 23px ;
     margin-right: 23px ;
+    margin-top: 20px;
 }
 .dp__form-header{
     align-items: center;
@@ -202,7 +203,7 @@
    font-family: sans-serif;
 }
 .dp__form-label{
-    color: #626262;
+    color: #8A8A8A;
     font-size: 13px;
     margin-bottom: 5px;
 }
@@ -235,7 +236,7 @@
   flex-direction: row;
   justify-content: end;
   gap: 40px;
-  margin-top: 83px;
+  margin-top: 65px;
   margin-left: 297px;
 }
 
@@ -251,6 +252,7 @@
  
 }
 
+
 .btn__next{
   font-size: 18px;
   width: 298px;
@@ -261,4 +263,48 @@
   opacity: 1;
   background-color: #DD0034;
 }
+.dp__form-group-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 7px;
+  }
+
+  .dp__form-input-check {
+    position: relative;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 18px; /* Ajusta el ancho del checkbox */
+    height: 18px; /* Ajusta la altura del checkbox */
+    border: 2px solid #626262; /* Color y grosor del borde */
+    border-radius: 3px;
+    margin-right: 8px;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .dp__form-input-check:checked::before {
+    content: "\2713"; /* Unicode character for checkmark */
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black; /* Color del chulito */
+    font-size: 13px; /* Tamaño del chulito */
+  }
+
+  .dp__form-label-check {
+    cursor: pointer;
+    font-size: 15px;
+    color: #3D3D3D;
+    opacity: 0.9;
+  }
+  .dp__label-check{
+    color: #8A8A8A;
+    font-size: 13px;    
+  }
+  
+
   

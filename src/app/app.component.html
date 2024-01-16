@@ -31,12 +31,37 @@
                 </div>
             </div>
         </section>
-        <main class="layout__content">
+        <div class="layout__content" [ngClass]="{'estilo-datos-personales': isDatosPersonalesActive(), 'estilo-informacion-academica': isInformacionAcademicaActive(), 'estilo-informacion-laboral': isInformacionLaboralActive()}">
+            <nav class="dp__navbar">
+                <div class="dp__menu" routerLink="/datos-personales" routerLinkActive="active">
+                    <a class="dp__menu-link">
+                        <img src="../../../assets/img/Usuario.svg" alt="Datos personales" class="icono-menu">
+                        <span>Datos personales</span>
+                    </a>
+                </div>
+                <div class="dp__menu" routerLink="/informacion-academica" routerLinkActive="active">
+                    <a class="dp__menu-link">
+                        <img src="../../../assets/img/Usuario.svg" alt="Información académica" class="icono-menu">
+                        <span>Información académica</span>
+                    </a>
+                </div>
+                <div class="dp__menu" routerLink="/informacion-laboral" routerLinkActive="active">
+                    <a class="dp__menu-link">
+                        <img src="../../../assets/img/Usuario.svg" alt="Información laboral" class="icono-menu">
+                        <span>Información laboral</span>
+                    </a>
+                </div>
+            </nav>
+            
+            <!-- <div class="dp__content"> -->
+            
+            <router-outlet></router-outlet>
+        <!-- </div> -->
+    </div>
 
+        <!-- <app-datos-personales></app-datos-personales> -->
 
-                <app-datos-personales></app-datos-personales>
-
-        </main>
+        <!-- </main> -->
         <!-- footer -->
         <section class="layout__footer">
             <div class="footer__container-image">
@@ -73,13 +98,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-<router-outlet></router-outlet>

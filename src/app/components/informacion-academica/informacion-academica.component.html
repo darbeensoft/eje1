@@ -1,0 +1,173 @@
+<!-- <div class="layout__content">
+<nav class="dp__navbar">
+    <div class="dp__menu"  >
+        <a class="dp__menu-link" routerLink="/datos-personales">
+            <img src="../../../assets/img/Usuario.svg" alt="Datos personales" class="icono-menu">
+            <span>Datos personales</span>
+        </a>
+    </div>
+    <div class="dp__menu" routerLink="/informacion-academica">
+        <a class="dp__menu-link">
+            <img src="../../../assets/img/Usuario.svg" alt="Información académica" class="icono-menu">
+            <span>Información académica</span>
+        </a>
+    </div>
+    <div class="dp__menu" routerLink="/informacion-laboral" >
+        <a class="dp__menu-link">
+            <img src="../../../assets/img/Usuario.svg" alt="Información laboral" class="icono-menu">
+            <span>Información laboral</span>
+        </a>
+    </div>
+</nav>-->
+
+<div class="dp__content">
+    <form action="">
+        <div class="dp__form">
+            <!-- <div class="dp__form-header">
+				<div class="dp__img-title">
+					<h5 class="archive__title">Seleccionar foto de perfil</h5>
+				</div>
+				<div class="dp__img-content">
+					
+					<img class="dp__img-image" src="../../../assets/img/Usuario.svg" alt="Imagen de usuario">
+
+					<div class="dp__img-file">
+						<input type="file" name="imgFile" id="fileInput">
+						<div class="file-name" id="fileName">Sin archivos seleccionados</div>
+					  </div>
+				</div>
+				<div class="dp__img-desc">
+					<span class="dp__img-description">Formatos permitidos: jpg, jpeg, png, svg, gif. El tamaño del
+						archivo no debe superar 1MB.</span>
+				</div>
+			</div> -->
+            <div class="dp__form-content">
+                <div class="content__left">
+                    <!-- <div class="dp__form-group">
+						<label class="dp__form-label" for="documentType">Tipo de Documento</label>
+						<select class="dp__form-input" name="documentType" id="documentType" >
+							<option value="" disabled selected>Cédula de ciudadanía</option>
+							<option value="cedula">Cédula de Identidad</option>
+							<option value="pasaporte">Pasaporte</option>
+							<option value="licencia">Licencia de Conducir</option>
+						</select>
+					</div>
+			
+					<div class="dp__form-group">
+						<label class="dp__form-label" for="birthdate">Fecha de nacimiento</label>
+						<input class="dp__form-input dp__form-input--sinfondo" type="date" name="birthdate" id="birthdate">
+					</div>
+			
+					<div class="dp__form-group">
+						<label class="dp__form-label" for="name">Nombres</label>
+						<input class="dp__form-input" type="text" name="name" id="name" placeholder="Escribe aquí">
+					</div> -->
+
+                    <div class="dp__form-group">
+                        <label class="dp__form-label" for="gender">Indíquenos su formación académica *</label>
+                        <select class="dp__form-input dp__form-input--sinfondo" name="gender" id="gender">
+                            <option value="" disabled selected>Seleccionar formacion academica</option>
+                            <option value="masculino">Profesional</option>
+                            <option value="femenino">Tecnologo</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <!-- <div class="dp__form-group">
+						<label class="dp__form-label" for="city">Ciudad</label>
+						<select class="dp__form-input dp__form-input--sinfondo" name="city" id="city">
+							<option value="" disabled selected>Seleccionar</option>
+							<option value="ciudad1">Ciudad 1</option>
+							<option value="ciudad2">Ciudad 2</option>
+							<option value="ciudad3">Ciudad 3</option>
+						</select>
+					</div> -->
+
+                    <div class="dp__form-group">
+                        <label class="dp__form-label" for="address">Por favor de una manera breve indíquenos la
+                            presentación de su hoja de vida*</label>
+                        <input class="dp__form-input dp__form-input--sinfondo" type="text" name="address" id="address"
+                            placeholder="Escribe aquí">
+                    </div>
+                </div>
+
+                <div class="content__right">
+                    <label class="dp__label-check" for="address">Mencione las tres áreas de su mayor especialización
+                        *</label>
+                    <div class="dp__form-group-check">
+                        <input class="dp__form-input-check" type="checkbox" id="check1" name="check1">
+                        <label class="dp__form-label-check" for="check1">Estratégica</label>
+
+                    </div>
+
+                    <div class="dp__form-group-check">
+                        <input class="dp__form-input-check" type="checkbox" id="check2" name="check2">
+                        <label class="dp__form-label-check" for="check2">Internacionalización</label>
+                    </div>
+
+                    <div class="dp__form-group-check">
+                        <input class="dp__form-input-check" type="checkbox" id="check3" name="check3">
+                        <label class="dp__form-label-check" for="check3">Financiera</label>
+                    </div>
+
+                    <div class="dp__form-group-check">
+                        <input class="dp__form-input-check" type="checkbox" id="check4" name="check4">
+                        <label class="dp__form-label-check" for="check4">Producción logística y operaciones</label>
+                    </div>
+
+                    <div class="dp__form-group-check">
+                        <input class="dp__form-input-check" type="checkbox" id="check5" name="check5">
+                        <label class="dp__form-label-check" for="check5">Gobierno corporativo</label>
+                    </div>
+
+                    <div class="dp__form-group-check">
+                        <input class="dp__form-input-check" type="checkbox" id="check6" name="check6">
+                        <label class="dp__form-label-check" for="check5">Mercadeo y ventas</label>
+                    </div>
+
+                    <div class="dp__form-group-check">                        
+                        <input class="dp__form-input-check" type="checkbox" id="check7" name="check7">
+                        <label class="dp__form-label-check" for="check5">Marketing digital</label>
+                    </div>
+
+                    <!-- Campos para la derecha -->
+                    <!-- <div class="dp__form-group">
+						<label class="dp__form-label" for="documentNumber">Número de Documento</label>
+						<input class="dp__form-input" type="text" name="documentNumber" id="documentNumber" placeholder="1.111.111.1111" required>
+					</div>
+			
+					<div class="dp__form-group">
+						<label class="dp__form-label" for="nationality">Nacionalidad</label>
+						<select class="dp__form-input dp__form-input--sinfondo" name="nationality" id="nationality" required>
+							<option value="" disabled selected>Seleccionar nacionalidad</option>
+							<option value="argentina">Argentina</option>
+							<option value="chilena">Chilena</option>
+							<option value="colombiana">Colombiana</option>
+						</select>
+					</div>
+			
+					<div class="dp__form-group">
+						<label class="dp__form-label" for="lastName">Apellidos</label>
+						<input class="dp__form-input" type="text" name="lastName" id="lastName" placeholder="Escribe aquí" required>
+					</div>
+			
+					<div class="dp__form-group">
+						<label class="dp__form-label" for="email">Correo Electrónico</label>
+						<input class="dp__form-input" type="email" name="email" id="email" placeholder="correo@empresa.com" required>
+					</div>
+			
+					<div class="dp__form-group">
+						<label class="dp__form-label" for="phoneNumber">Número de Contacto</label>
+						<input class="dp__form-input" type="tel" name="phoneNumber" id="phoneNumber" placeholder="+57 12345678" required>
+					</div> -->
+                </div>
+            </div>
+
+        </div>
+        <div class="btns__form">
+            <button class="btn__cancel">Cancelar</button>
+            <button class="btn__next">Continuar</button>
+        </div>
+    </form>
+</div>
+<!--</div> -->
