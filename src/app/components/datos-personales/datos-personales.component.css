@@ -77,8 +77,18 @@
 /* formulario */
 .dp__content{
     width: 911px;
-    margin-left: 23px ;
+    margin-top: 32px;
+    margin-left: 14px ;
     margin-right: 23px ;
+}
+.dp__img-title{
+  margin-left: 107px;
+  margin-bottom: -20px;
+  font-size: 1.2rem;
+  color: #3D3D3D;
+}
+form{
+  width: 958px;
 }
 .dp__form-header{
     align-items: center;
@@ -91,17 +101,17 @@
     flex-direction: row;
 }
 .dp__img-image{
-    width: 65px;
-    height: 65px;
+   width: 68px;
+   height: 68px;
+   /*font-weight: 900;
+   *//*stroke-width: 5;
+   */
 }
-.dp__img-title{
-    margin-left: 107px;
-    margin-bottom: -20px;
-    font-size: 1.2rem;
-    color: #333;
-}
+
 .archive__title{
     font-size: 18px;
+    font-family: "RaleWayBold";
+    margin-bottom: 30px;
 }
 .dp__img-content {
     display: flex;
@@ -147,6 +157,8 @@
     height: 41px;
     border: 2px solid #3888CE;
     margin-left: 15px;
+    
+    
   }
   
   .dp__img-file input[type="file"] {
@@ -160,31 +172,36 @@
   }
   
   .file-name {
-    font-size: 16px;
-    background-color: white;
-    padding: 14px 24px;
+    font-size: 18px;
+    background-color: transparent;
+    padding: 14px 25px;
     border-top: none;
     border-radius: 0 0 3px 3px;
     color: #3D3D3D;
     font-weight: 500;
-    margin-top: 0;
-    margin-left: 15px;
+    font-family: RalewaySemibold;
+    margin-top: -4px;
+    margin-left: 12px;
   }
   .dp__form-content{
     display: flex;
     flex-direction: row;
   }
   .content__left{
+    /* max-width: 456px; */
     margin-right: 19px;
+    margin-left: 10px
     
   }
  
   .dp__form-group{
+    max-width: 456px;
     display: flex;
     flex-direction: column;
   }
   
   .dp__form-input {
+  box-sizing: border-box;
    top: 545px;
    left: 228px;
    width: 436px;
@@ -200,6 +217,8 @@
    -o-border-radius: 5px;
    margin-bottom: 26px;
    font-family: sans-serif;
+   padding-left: 15px;
+
 }
 .dp__form-label{
     color: #626262;
@@ -207,7 +226,7 @@
     margin-bottom: 5px;
 }
 .dp__form-input::placeholder {
-    padding-left: 20px;
+    /* padding-left: 20px; */
     color: #8A8A8A; 
     font-size: 14px; 
   }
@@ -220,6 +239,8 @@
   }
   
   .dp__form-input--sinfondo {
+    max-width: 456px;
+
     outline: none;
     background-color: transparent;
     border-bottom: 2px solid #AFAFAF;
@@ -235,23 +256,30 @@
   flex-direction: row;
   justify-content: end;
   gap: 40px;
-  margin-top: 83px;
-  margin-left: 297px;
+  margin-top: 113px;
+  /* margin-left: 200px; */
 }
 
 .btn__cancel{
+  cursor: pointer;
   font-size: 18px;
   width: 298px;
-  height: 60px;
+  height: 62px;
   color: #2377A1;
   border: 2px solid #91BBD0;
   border-radius: 4px;
   opacity: 1;
   background-color: white;
- 
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  transition: all 300ms ease-in-out;
+
 }
 
 .btn__next{
+  cursor: pointer;
   font-size: 18px;
   width: 298px;
   height: 60px;
@@ -260,5 +288,58 @@
   border-radius: 4px;
   opacity: 1;
   background-color: #DD0034;
+  transition: all 300ms ease-in-out;
+
 }
+.btn__cancel:hover {
+  color: white;
+  background-color: #000000;
+  border: 1px solid #000000;
+}
+.btn__next:hover {
+  color: white;
+  background-color: #A0002E;
+}
+  
+.alert-danger{ 
+  box-sizing: border-box;
+  width: 1366px;
+  height: 91px;
+  background: #FCE2E2 0% 0% no-repeat padding-box;
+  box-shadow: 0px 6px 5px -3px #00000029; 
+  opacity: 1;
+  /* position: relative; */
+  /* left: -202px; */
+  /* top: -261px; */
+  padding: 19px 105px;
+  position: fixed;
+  z-index: 9999;
+  top: 62px;
+  left: 117px;
+
+  }
+  .alert-title{
+      font-family: "RalewayBold";
+      color: #A0002E;
+  }
+  .alert-content{
+      position: relative;
+      font-family: "RalewayRegular";
+      color: #A0002E;
+      font-size: 16px;
+      margin-top: 3px;
+      left: -111px;
+      top: 24px;
+      transition: all 300s ease-in-out;
+      
+}
+  .alert-img{
+      position: absolute;
+      width: 25px;
+      height: 25px;   
+      right: 50px;
+      top: 34px;
+      cursor: pointer;
+      
+  }
   

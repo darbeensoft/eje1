@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    
 
     <div class="layout">
         <!-- header -->
@@ -31,27 +32,29 @@
                 </div>
             </div>
         </section>
-        <div class="layout__content" [ngClass]="{'estilo-datos-personales': isDatosPersonalesActive(), 'estilo-informacion-academica': isInformacionAcademicaActive(), 'estilo-informacion-laboral': isInformacionLaboralActive()}">
-            <nav class="dp__navbar">
-                <div class="dp__menu" routerLink="/datos-personales" routerLinkActive="active">
+        <div class="layout__content" [ngClass]="{'estilo-datos-personales': isDatosPersonalesActive(), 'estilo-informacion-academica': isInformacionAcademicaActive(), 'estilo-informacion-laboral': isInformacionLaboralActive(),'estilo-datos-emprendedor': isRegistroEmprendedorActive()}">
+            <nav class="dp__navbar" *ngIf="rutaEspecifica()">
+                <div class="dp__menu dp__menu--primero" routerLink="/datos-personales" routerLinkActive="active">
                     <a class="dp__menu-link">
-                        <img src="../../../assets/img/Usuario.svg" alt="Datos personales" class="icono-menu">
-                        <span>Datos personales</span>
+                        <img src="../assets/img/Usuario2.svg" alt="Datos personales" class="icono-menu">
+                        <span class="dp__menu-span">Datos personales</span>
                     </a>
                 </div>
-                <div class="dp__menu" routerLink="/informacion-academica" routerLinkActive="active">
+                <div class="dp__menu dp__menu--segundo" routerLink="/informacion-academica" routerLinkActive="active">
                     <a class="dp__menu-link">
-                        <img src="../../../assets/img/Usuario.svg" alt="Información académica" class="icono-menu">
-                        <span>Información académica</span>
+                        <img src="../assets/img/Frame.svg" alt="Información académica" class="icono-menu">
+                        <span class="dp__menu-span">Información académica</span>
                     </a>
                 </div>
-                <div class="dp__menu" routerLink="/informacion-laboral" routerLinkActive="active">
+                <!-- <div class="dp__menu--divisor"></div> -->
+                <div class="dp__menu dp__menu--tercero" routerLink="/informacion-laboral" routerLinkActive="active">
                     <a class="dp__menu-link">
-                        <img src="../../../assets/img/Usuario.svg" alt="Información laboral" class="icono-menu">
-                        <span>Información laboral</span>
+                        <img src="../assets/img/Beneficios.svg" alt="Información laboral" class="icono-menu">
+                        <span class="">Información laboral</span>
                     </a>
                 </div>
             </nav>
+            
             
             <!-- <div class="dp__content"> -->
             
@@ -82,11 +85,20 @@
                     <a class="footer__item" href="#">E-mail de notificaciones judiciales</a>
                 </ul>
 
-                <ul class="footer__list">
-                    <a class="footer__icon" href="#"><i class="fab fa-facebook-f">F</i></a>
-                    <a class="footer__icon" href="#"><i class="fab fa-instagram">F</i></a>
-                    <a class="footer__icon" href="#"><i class="fab fa-twitter">F</i></a>
-                    <a class="footer__icon" href="#"><i class="fab fa-youtube">F</i></a>
+                <ul class="footer__list-link">
+                    <div class="list-link__title">¡Síguenos!</div>
+                    <div class="list-link__left">
+                    <a class="footer__icon" href="#"><img src="../assets/img/Facebook.svg" alt=""></a>
+                    <a class="footer__icon" href="#"><img src="../assets/img/ICONO_X.png" alt=""></a>
+                    <a class="footer__icon" href="#"><img src="../assets/img/LinkedIn.svg" alt=""></a>
+                </div>
+                <div class="list-link__left">
+
+                    <a class="footer__icon" href="#"><img src="../assets/img/Youtube.svg" alt=""></a>
+                    <a class="footer__icon" href="#"><img src="../assets/img/Instagram.svg" alt=""></a>
+                    <a class="footer__icon" href="#"><img src="../assets/img/tiktok.svg" alt=""></a>
+                </div>
+
                 </ul>
             </div>
             <div class="footer__content__copy">

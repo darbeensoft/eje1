@@ -1,1 +1,124 @@
-<p>informacion-laboral works!</p>
+
+<div class="alert-danger" [hidden]="!showAlert || formPersonal.valid">
+    <img src="" alt="">
+    <span class="alert-title">Recuerda</span>
+    <span class="alert-content">Para continuar el proceso debes diligenciar todos los campos marcados con asterisco.
+    </span>
+    <img src="../../../assets/img/close.svg" class="alert-img" alt="" (click)='hideAlert()'>
+</div>
+<div class="dp__content">
+    <form [formGroup]="formPersonal" autocomplete="off" action="">
+        <div class="dp__form">
+            <div class="dp__form-title">
+                <label class="dp__form-label--title">¿Actualmente estás empleado/a?*</label>
+                <div class="dp__radio-group">
+                    <input formControlName="experiencia" type="radio" id="experiencia-si" name="experiencia" value="si" checked>
+                    <label class="dp__radio-label" for="experiencia-si">Sí</label>
+            
+                    <input formControlName="experiencia" type="radio" id="experiencia-no" name="experiencia" value="no">
+                    <label class="dp__radio-label" for="experiencia-no">No</label>
+                </div>
+            </div>
+            <div class="dp__form-content">
+                <div class="content__left">
+                    <!-- <div class="dp__form-group">
+                        <label class="dp__form-label" for="address">Por favor de una manera breve indíquenos la
+                            presentación de su hoja de vida*</label>
+                        <input  class="dp__form-input dp__form-input--sinfondo" type="text" name="address" id="address"
+                            placeholder="Escribe aquí">
+                    </div> -->
+                    <div class="dp__form-group">
+                        <label class="dp__form-label" for="profesion">Profesión *</label>
+                        <input formControlName="profesion" class="form-control dp__form-input dp__form-input--sinfondo"
+                            type="text" name="profesion" id="profesion" placeholder="Escribe aquí">
+                    </div>
+                    <div class="dp__form-group">
+                        <label class="dp__form-label" for="address">Años de experiencia laboral*</label>
+                        <input formControlName="experiencia" class="dp__form-input dp__form-input--sinfondo" type="text"
+                            name="address" id="address" placeholder="Escribe aquí">
+                    </div>
+                </div>
+
+                <div class="content__right">
+                    <!-- <label class="dp__label-check" for="address">Mencione las tres áreas de su mayor especialización*</label>            -->
+                    <div class="dp__form-group">
+                        <label class="dp__form-label" for="address">Especialidad *</label>
+                        <input formControlName="especialidad" class="dp__form-input dp__form-input--sinfondo"
+                            type="text" name="address" id="address" placeholder="Escribe aquí">
+                    </div>
+                    <div class="dp__form-group">
+                        <label class="dp__form-label" for="address">Cargo actual*</label>
+                        <input formControlName="cargo" class="dp__form-input dp__form-input--sinfondo" type="text"
+                            name="address" id="address" placeholder="Escribe aquí">
+                    </div>
+                </div>
+            </div>
+            <div class="dp__form-content2">
+                <span class="title__conten2">Buscar Empresa</span>
+                <div class="content__group2">
+                    <div class="content__left2">
+
+                        <div class="dp__form-group">
+                            <label class="dp__form-label" for="city">Criterio de búsqueda *</label>
+                            <select formControlName="razon" class="dp__form-input dp__form-input--sinfondo" name="city"
+                                id="city">
+                                <option value="ciudad1">Ciudad 1</option>
+                                <option value="ciudad2">Ciudad 2</option>
+                                <option value="ciudad3">Ciudad 3</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="content__right2">
+                        <div class="dp__form-group">
+                            <label class="dp__form-label" for="address">Nombre de la empresa *</label>
+                            <input formControlName="nombreEmpresa" class="dp__form-input dp__form-input--sinfondo" type="text" name="address"
+                                id="address" placeholder="Escribe aquí">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="btns__form2">
+                    <button class="btn__buscar-empresa">Buscar empresa</button>
+                </div>
+                <span class="title__conten3">Resultador de la búsqueda</span>
+                <div class="content__busqueda"><span class="content__busqueda-title">Aqui encontraras el listado de las
+                        empresas</span></div>
+
+            </div>
+
+        </div>
+        <div class="group-check">
+            <div class="dp__form-group-check">
+                <input class="dp__form-input-check" type="checkbox" id="check2" name="check2">
+                <label class="dp__form-label-check" for="check2">Autorizo recibir servicios de mensajes a la direccion
+                    de correo electroncio inscrita</label>
+            </div>
+
+            <div class="dp__form-group-check">
+                <input class="dp__form-input-check" type="checkbox" id="check3" name="check3">
+                <label class="dp__form-label-check" for="check3">Autorizo el contacto telefonico através de SMS,
+                    WhatsApp y llamadas</label>
+            </div>
+
+            <div class="dp__form-group-check">
+                <input class="dp__form-input-check" type="checkbox" id="check4" name="check4">
+                <label class="dp__form-label-check" for="check4">He leido y acepto el aviso de privacidad de datos
+                    personales</label>
+            </div>
+            <div class="dp__form-group-check">
+                <input class="dp__form-input-check" type="checkbox" id="check4" name="check4">
+                <label class="dp__form-label-check" for="check4">Acepto los términos y condiciones</label>
+            </div>
+        </div>
+        <div class="btns__form">
+            <button class="btn__cancel">Cancelar</button>
+            <button (click)="onSubmit()"  type="submit" class="btn__next">Enviar</button>
+
+        </div>
+
+    </form>
+</div>
+
+<!--</div> -->

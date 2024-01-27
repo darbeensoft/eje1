@@ -1,0 +1,145 @@
+
+<div class="alert-danger" [hidden]="!showAlert || formPersonal.valid">
+    <img src="" alt="">
+    <span class="alert-title">Recuerda</span>
+    <span class="alert-content">Para continuar el proceso debes diligenciar todos los campos marcados con asterisco.
+    </span>
+    <img src="../../../assets/img/close.svg" class="alert-img" alt="" (click)='hideAlert()'>
+</div>
+
+<div class="dp__content">
+    <form [formGroup]="formPersonal" autocomplete="off" action="">
+        <div class="dp__form">
+            <div class="dp__form-title">
+                <label class="dp__form-label">¿Que tipo de empresa es?*</label>
+                <div class="dp__radio-group">
+                    <input class="dp__radio-input" formControlName="pNatural" type="radio"  value="PN" >
+                    <label class="dp__radio-label" >Persona natural</label>
+            
+                    <input class="dp__radio-input" formControlName="pJuridica" type="radio"  value="PJ">
+                    <label class="dp__radio-label" >Persona juridíca</label>
+
+                    <input class="dp__radio-input" formControlName="cCOlegio" type="radio"  value="CO" checked>
+                    <label class="dp__radio-label" >Colegio</label>
+                </div>
+            </div>
+            <div class="dp__form-content">
+                <div class="content__left">
+                   
+                    <div class="dp__form-group">
+                        <label class="dp__form-label" >Código *</label>
+                        <input formControlName="codigo" class="dp__form-input"type="text" placeholder="Escribe aquí">
+                    </div>
+                    <div class="dp__form-group">
+                        <label class="dp__form-label" >Departamento *</label>
+                        <select class="dp__form-input "  required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="masculino">Opción 1</option>
+                            <option value="femenino">Opción 2</option>
+                            <option value="otro">Opción 3</option>
+                        </select>
+                    </div>
+                    <div class="dp__form-group">
+                        <label class="dp__form-label" >Localidad *</label>
+                        <select class="dp__form-input "  required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="masculino">Opción 1</option>
+                            <option value="femenino">Opción 2</option>
+                            <option value="otro">Opción 3</option>
+                        </select>
+                    </div>
+                    <div class="dp__form-group">
+                        <label class="dp__form-label" >Jornada *</label>
+                        <select class="dp__form-input "  required>
+                            <option value="" disabled selected>Seleccionar</option>
+                            <option value="masculino">Opción 1</option>
+                            <option value="femenino">Opción 2</option>
+                            <option value="otro">Opción 3</option>
+                        </select>
+                    </div>
+                    <div class="dp__form-group">
+                        <label class="dp__form-label" >Nivel *</label>
+                        <select class="dp__form-input "  required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="masculino">Opción 1</option>
+                            <option value="femenino">Opción 2</option>
+                            <option value="otro">Opción 3</option>
+                        </select>
+                    </div>
+                    
+                </div>
+
+                <div class="content__right">
+                   
+                    <div class="dp__form-group">
+                        <label class="dp__form-label" >Nombre del colegio *</label>
+                        <input formControlName="nColegio" class="dp__form-input "
+                            type="text" placeholder="Escribe aquí">
+                    </div>
+                    <div class="dp__form-group">
+                        <label class="dp__form-label" >Municipio *</label>
+                        <select class="dp__form-input" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="masculino">Opción 1</option>
+                            <option value="femenino">Opción 2</option>
+                            <option value="otro">Opción 3</option>
+                        </select>
+                    </div>
+                    <div class="dp__form-group">
+                        <label class="dp__form-label" >Numero de estudiantes*</label>
+                        <input formControlName="nEstudiantes" class="dp__form-input" type="text"
+                             placeholder="Escribe aquí">
+                    </div>
+                    
+
+                    <div class="dp__form-title">
+                        <label class="dp__form-label">Tipo de colegio*</label>
+                        <div class="dp__radio-group">
+                            <input class="dp__radio-input" formControlName="tcolegio" type="radio" id="tcolegio-pub" name="tcolegio" value="PU" >
+                            <label class="dp__radio-label" for="tcolegio-pub">Público</label>
+                    
+                            <input class="dp__radio-input" formControlName="tcolegio" type="radio" id="tcolegio-pri" name="tcolegio" value="PRI">
+                            <label class="dp__radio-label" for="tcolegio-pri">Privado</label>
+        
+                            
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+            
+
+        </div>
+        <div class="group-check">
+            <div class="dp__form-group-check">
+                <input class="dp__form-input-check" type="checkbox" >
+                <label class="dp__form-label-check" >Autorizo recibir servicios de mensajes a la direccion
+                    de correo electroncio inscrita</label>
+            </div>
+
+            <div class="dp__form-group-check">
+                <input class="dp__form-input-check" type="checkbox" >
+                <label class="dp__form-label-check" >Autorizo el contacto telefonico através de SMS,
+                    WhatsApp y llamadas</label>
+            </div>
+
+            <div class="dp__form-group-check">
+                <input class="dp__form-input-check" type="checkbox" >
+                <label class="dp__form-label-check" >He leido y acepto el aviso de privacidad de datos
+                    personales</label>
+            </div>
+            <div class="dp__form-group-check">
+                <input class="dp__form-input-check" type="checkbox" >
+                <label class="dp__form-label-check" >Acepto los términos y condiciones</label>
+            </div>
+        </div>
+        <div class="btns__form">
+            <button class="btn__cancel">Cancelar</button>
+            <button (click)="onSubmit()"  type="submit" class="btn__next">Enviar</button>
+
+        </div>
+
+    </form>
+</div>
+
+<!--</div> -->

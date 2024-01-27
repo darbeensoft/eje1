@@ -1,4 +1,4 @@
-.layout__footer {
+/* .layout__footer {
     margin: 0 auto;
     margin-top: 900px;
     top: 1346px;
@@ -19,13 +19,13 @@
     margin-left: 48.1px;
     margin-top: 32.31px;
     margin-bottom: 17px;
-    /* margin-left: 4.3rem;
+    margin-left: 4.3rem;
     background-color: transparent;
-    margin-top: 2.5rem; */
+    margin-top: 2.5rem;
 }
 .footer__bottom{
     display: flex;
-}
+} */
 /* 
 .footer__main{
     display: flex;
@@ -62,7 +62,7 @@
 
 } */
 
-.layout__content{
+/* .layout__content{
     margin: 0 auto;
-}
+} */
 
