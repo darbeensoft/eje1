@@ -2,12 +2,13 @@ import { Component } from '@angular/core';
 import { FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { FormularioService } from '../../services/formulario.service';
+import { ModalComponent } from '../modal/modal.component';
 
 
 @Component({
   selector: 'app-informacion-academica',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, ModalComponent],
   templateUrl: './informacion-academica.component.html',
   styleUrl: './informacion-academica.component.css'
 })

@@ -6,6 +6,7 @@
     </span>
     <img src="../../../assets/img/close.svg" class="alert-img" alt=""  (click)='hideAlert()'>
 </div>
+
 <div class="dp__content"> 
     <form [formGroup]="formPersonal"  autocomplete="off" action="">
         <div class="dp__form">
@@ -23,7 +24,7 @@
                     </div>
                 </div>
                 <div class="dp__img-desc">
-                    <span class="dp__img-description">Formatos permitidos: jpg, jpeg, png, svg, gif. El tamaño del archivo no debe superar 1MB.</span>
+                    <span class="dp__img-description">Formatos permitidos: jpg, jpeg, png, svg, gif. El tamaño del archivo no debe superar 1 MB.</span>
                 </div>
             </div>
             <div class="dp__form-content">
@@ -110,8 +111,11 @@
             
         </div>
         <div class="btns__form">
-            <button class="btn__cancel">Cancelar</button>
+            <!-- <button class="btn btn-primary">Ojito</button> -->
+            <app-modal></app-modal>
+            <button class="btn__cancel" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Cancelar</button>
 			<button (click)="onSubmit()"  type="submit" class="btn__next">Continuar</button>
         </div>
     </form>
 </div>
+

@@ -46,9 +46,9 @@
                         <span class="dp__menu-span">Información académica</span>
                     </a>
                 </div>
-                <!-- <div class="dp__menu--divisor"></div> -->
                 <div class="dp__menu dp__menu--tercero" routerLink="/informacion-laboral" routerLinkActive="active">
-                    <a class="dp__menu-link">
+                <span class="dp__menu--divisor" *ngIf="noDivisor()"></span>
+                    <a class="dp__menu-link" >
                         <img src="../assets/img/Beneficios.svg" alt="Información laboral" class="icono-menu">
                         <span class="">Información laboral</span>
                     </a>
@@ -57,7 +57,6 @@
             
             
             <!-- <div class="dp__content"> -->
-            
             <router-outlet></router-outlet>
         <!-- </div> -->
     </div>
@@ -71,41 +70,47 @@
                 <img class="footer__image" src="../assets/img/logo_ccb_2.png" alt="Logo CCb">
             </div>
             <div class="footer__lists">
+
                 <ul class="footer__list">
-                    <a class="footer__item" href="#">Términos y condiciones</a>
-                    <a class="footer__item" href="#">Protección de Datos Personales</a>
-                    <a class="footer__item" href="#">Reglas en redes sociales</a>
+                    <li class="footer__item"><a href="#">Términos y condiciones</a></li>
+                    <li class="footer__item"><a href="#">Protección de Datos Personales</a></li>
+                    <li class="footer__item"><a href="#">Reglas en redes sociales</a></li>
                 </ul>
                 <ul class="footer__list">
-                    <a class="footer__item" href="#">Ley de transparencia</a>
-                    <a class="footer__item" href="#">Línea de ética CCB</a>
-                </ul>
-                <ul class="footer__list">
-                    <a class="footer__item" href="#">Ética en la CCB</a>
-                    <a class="footer__item" href="#">E-mail de notificaciones judiciales</a>
+                    <li class="footer__item"><a href="#">Ley de transparencia</a></li>
+                    <li class="footer__item"><a href="#">Línea de ética CCB</a></li>
                 </ul>
 
-                <ul class="footer__list-link">
-                    <div class="list-link__title">¡Síguenos!</div>
-                    <div class="list-link__left">
-                    <a class="footer__icon" href="#"><img src="../assets/img/Facebook.svg" alt=""></a>
-                    <a class="footer__icon" href="#"><img src="../assets/img/ICONO_X.png" alt=""></a>
-                    <a class="footer__icon" href="#"><img src="../assets/img/LinkedIn.svg" alt=""></a>
+                <ul class="footer__list footer__list--3">
+                    <li class="footer__item"><a href="#">Ética en la CCB</a></li>
+                    <li class="footer__item"><a href="#">E-mail de notificaciones judiciales</a></li>
+                </ul>        
+                <ul class="footer__list footer__list--4">
+                    <li class="footer__item"><a href="#">¡Siguenos!</a></li>
+                    <div class="links-content">
+                    <div class="links-images">
+                        <li class="images"><a href="#"><img src="../assets/img/Facebook.svg" alt=""></a></li>
+                        <li class="images"><a href="#"><img src="../assets/img/Youtube.svg" alt=""></a></li>    
+                    </div> 
+                    <div class="links-images">
+                        <li class="images"><a href="#"><img src="../assets/img/ICONO_X.png" alt=""></a></li>    
+                        <li class="images"><a href="#"><img src="../assets/img/Instagram.svg" alt=""></a></li>
+                    </div>
+                    <div class="links-images">
+                        <li class="images"><a href="#"><img src="../assets/img/LinkedIn.svg" alt=""></a></li>
+                        <li class="images"><a href="#"><img src="../assets/img/tiktok.svg" alt=""></a></li>    
+                    </div>      
                 </div>
-                <div class="list-link__left">
-
-                    <a class="footer__icon" href="#"><img src="../assets/img/Youtube.svg" alt=""></a>
-                    <a class="footer__icon" href="#"><img src="../assets/img/Instagram.svg" alt=""></a>
-                    <a class="footer__icon" href="#"><img src="../assets/img/tiktok.svg" alt=""></a>
-                </div>
-
                 </ul>
+                
             </div>
+            
             <div class="footer__content__copy">
                 <span class="description__copy">Todos los derechos reservados</span>
                 <span class="description__copy">Cámara de Comercio de Bogotá, 2023</span>
             </div>
         </section>
+        
     </div>
 </body>
 

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ReactiveFormsModule, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { FormularioService } from '../../services/formulario.service';
+import { ModalComponent } from '../modal/modal.component';
 
 
 
@@ -10,7 +11,7 @@ import { FormularioService } from '../../services/formulario.service';
 @Component({
   selector: 'app-informacion-laboral',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, ModalComponent],
   templateUrl: './informacion-laboral.component.html',
   styleUrl: './informacion-laboral.component.css'
 })

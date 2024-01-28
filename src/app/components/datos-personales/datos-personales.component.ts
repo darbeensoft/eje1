@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { FormularioService } from '../../services/formulario.service';
+import { ModalComponent } from '../modal/modal.component';
 
 @Component({
   selector: 'app-datos-personales',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, ModalComponent],
   templateUrl: './datos-personales.component.html',
   styleUrl: './datos-personales.component.css'
 })

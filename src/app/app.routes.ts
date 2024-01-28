@@ -9,6 +9,6 @@ export const routes: Routes = [
     { path: 'informacion-academica', component: InformacionAcademicaComponent },
     { path: 'informacion-laboral', component: InformacionLaboralComponent },
     { path: 'datos-emprendedor', component: RegistroEmprendedorComponent },
-    { path: '', redirectTo: '/datos-personales', pathMatch: 'full' },   
+    { path: '', redirectTo: '/datos-emprendedor', pathMatch: 'full' },   
 
 ];

@@ -5,11 +5,12 @@ import { InformacionAcademicaComponent } from './components/informacion-academic
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { Router } from '@angular/router';
+import { ModalComponent } from './components/modal/modal.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeaderComponent, FooterComponent, InformacionAcademicaComponent, RouterModule],
+  imports: [CommonModule, RouterOutlet, HeaderComponent, FooterComponent, InformacionAcademicaComponent, RouterModule, ModalComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -37,6 +38,9 @@ isRegistroEmprendedorActive(): boolean {
 }
 rutaEspecifica(): boolean {
   return !this.router.url.includes('/datos-emprendedor');
+}
+noDivisor(): boolean {
+  return this.router.url.includes('/datos-personales');
 }
 
 

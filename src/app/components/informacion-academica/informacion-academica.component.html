@@ -77,7 +77,8 @@
 
         </div>
         <div class="btns__form">
-            <button class="btn__cancel">Cancelar</button>
+            <app-modal></app-modal>
+            <button class="btn__cancel" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Cancelar</button>
             <button (click)="onSubmit()"  type="submit" class="btn__next">Continuar</button>
 
         </div>
