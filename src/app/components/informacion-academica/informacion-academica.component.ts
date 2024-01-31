@@ -42,7 +42,7 @@ export class InformacionAcademicaComponent {
   onSubmit() {
     if (this.formularioService.validarFormularioIndividual(this.formPersonal)) {
       this.hideAlert();
-      this.router.navigate(['./informacion-academica']);
+      this.router.navigate(['./informacion-laboral']);
     } else {
       this.showValidationErrorAlert();
     }

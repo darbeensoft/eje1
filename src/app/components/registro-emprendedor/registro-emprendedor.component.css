@@ -2,7 +2,6 @@
 .dp__content {
     width: 911px;
     margin-top: 32px;
-    /* margin-left: 14px ; */
     margin-right: 23px;
 }
 .dp__radio-group{
@@ -10,8 +9,8 @@
     margin-top: 5px;
 }
 .dp__radio-input{
-    width: 18px; /* Ancho deseado */
-    height: 18px; /* Altura deseada */
+    width: 18px; 
+    height: 18px; 
     vertical-align: text-bottom;
 }
 
@@ -19,12 +18,10 @@
     width: 958px;
     height: 92px;
     border-bottom: 2px solid #E8E8E8;
-    /* position: relative; */
     margin-top: -17px;
     font-size: 19px;
     color: #626262;
     font-family: "RalewayMedium";
-    /* font-weight: 600; */
     margin-bottom: 37px;
 }
 
@@ -39,13 +36,7 @@
     margin-left: 5px;   
     font-size: 19px;
     color: #626262; 
-    /* vertical-align: middle; */
 }
-
-/*.dp__form-label--title {
-     font-size: 12px; */
-    /* padding-bottom: 10px; 
-}*/
 
 .dp__img-title {
     margin-left: 107px;
@@ -72,10 +63,6 @@ form {
 .dp__img-image {
     width: 68px;
     height: 68px;
-    /*font-weight: 900;
-     */
-    /*stroke-width: 5;
-     */
 }
 
 .archive__title {
@@ -159,15 +146,11 @@ form {
 .dp__form-content {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
-    /* background-color: #2377A1; */
     width: 800px;
 }
 
 .content__left {
-    /* width: 500px; */
     margin-right: 25px;
-
 }
 
 .content__right {
@@ -180,7 +163,6 @@ form {
     flex-direction: column;
     margin-bottom: 28px;
     border-bottom: 1px solid #8A8A8A;  
-
 }
 
 .dp__form-label {
@@ -200,7 +182,6 @@ form {
     padding-left: 15px;
     font-family: "RalewayRegular";
     color: #3D3D3D;
-    /* border: 1px solid red; */
     margin-bottom: 4px;
 }
 
@@ -217,8 +198,6 @@ form {
     padding-left: 13px;
     font-family: "RalewayRegular";
 }
-
-
 
 .dp__form-input-check {
     position: relative;
@@ -255,7 +234,7 @@ form {
     height: 20px;
     border: 2px solid #3D3D3D;
     border-radius: 50%;
-    /*Esquinascuadradaspordefecto*/margin-right: 8px;
+    margin-right: 8px;
     outline: none;
     cursor: pointer;
     
@@ -269,9 +248,9 @@ form {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #3D3D3D;
-    border-radius: 50%; /* Hace que sea una bola */
-    width: 11px; /* Ancho deseado */
-    height: 11px; /* Altura deseada */
+    border-radius: 50%; 
+    width: 11px; 
+    height: 11px; 
 }
 
 .group-check {
@@ -283,8 +262,6 @@ form {
     align-items: center;
     margin-bottom: 5px;
 }
-
-
 
 .dp__form-label-check {
     cursor: pointer;
@@ -305,7 +282,6 @@ form {
     gap: 40px;
     margin-top: 20px;
     margin-right: 0px;
-    /* margin-left: 200px; */
 }
 
 
@@ -361,9 +337,6 @@ form {
     background: #FCE2E2 0% 0% no-repeat padding-box;
     box-shadow: 0px 6px 5px -3px #00000029;
     opacity: 1;
-    /* position: relative; */
-    /* left: -202px; */
-    /* top: -261px; */
     padding: 19px 105px;
     position: fixed;
     z-index: 9999;
@@ -398,3 +371,4 @@ form {
     cursor: pointer;
 
 }
+

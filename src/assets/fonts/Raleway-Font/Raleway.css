@@ -21,3 +21,8 @@
     src: url('./Raleway-SemiBold.ttf') format('truetype');
     font-weight: 600;
 }
+@font-face{
+    font-family: 'RaleWayExtraBold';
+    src: url('./Raleway-ExtraBold.ttf') format('truetype');
+    font-weight: 600;
+}

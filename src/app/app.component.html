@@ -1,19 +1,6 @@
-<!DOCTYPE html>
-<html lang="es">
-    <!-- prueba -->
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    
-
     <div class="layout">
         <!-- header -->
-        <section class="layout__header">
+        <section *ngIf="rutaHome()" class="layout__header" >
 
             <div class="header__container-image">
                 <img class="header__image" src="../assets/img/logo_ccb.png" alt="Logo CCb">
@@ -21,7 +8,7 @@
 
         </section>
         <!-- contenido principal -->
-        <section class="layout__title">
+        <section *ngIf="rutaHome()" class="layout__title">
             <div class="header__container">
                 <div class="header__title">
                     <p class="title__description">Registro Red de Mentoría y Voluntariado de la CCB</p>
@@ -32,8 +19,8 @@
                 </div>
             </div>
         </section>
-        <div class="layout__content" [ngClass]="{'estilo-datos-personales': isDatosPersonalesActive(), 'estilo-informacion-academica': isInformacionAcademicaActive(), 'estilo-informacion-laboral': isInformacionLaboralActive(),'estilo-datos-emprendedor': isRegistroEmprendedorActive()}">
-            <nav class="dp__navbar" *ngIf="rutaEspecifica()">
+        <div  class="layout__content" [ngClass]="{'estilo-datos-personales': isDatosPersonalesActive(), 'estilo-informacion-academica': isInformacionAcademicaActive(), 'estilo-informacion-laboral': isInformacionLaboralActive(),'estilo-datos-emprendedor': isRegistroEmprendedorActive(), 'estilos-home': isrutaHomeActive()}">
+            <nav  class="dp__navbar" *ngIf="rutaEspecifica() && rutaHome()" >
                 <div class="dp__menu dp__menu--primero" routerLink="/datos-personales" routerLinkActive="active">
                     <a class="dp__menu-link">
                         <img src="../assets/img/Usuario2.svg" alt="Datos personales" class="icono-menu">
@@ -54,16 +41,9 @@
                     </a>
                 </div>
             </nav>
-            
-            
-            <!-- <div class="dp__content"> -->
             <router-outlet></router-outlet>
-        <!-- </div> -->
     </div>
 
-        <!-- <app-datos-personales></app-datos-personales> -->
-
-        <!-- </main> -->
         <!-- footer -->
         <section class="layout__footer">
             <div class="footer__container-image">
@@ -112,6 +92,3 @@
         </section>
         
     </div>
-</body>
-
-</html>

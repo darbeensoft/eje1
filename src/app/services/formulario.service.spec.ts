@@ -10,7 +10,7 @@ describe('FormularioService', () => {
     service = TestBed.inject(FormularioService);
   });
 
-  it('should be created', () => {
+  it('Debe validar correctamente', () => {
     expect(service).toBeTruthy();
   });
 });

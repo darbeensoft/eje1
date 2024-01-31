@@ -35,5 +35,24 @@ export class DatosPersonalesComponent {
       this.showValidationErrorAlert();
     }
   }
+  archivoSeleccionado: string = 'Sin archivos seleccionados';
+  nombreArchivo(event: any) {
+    const archivoEntrada = event.target;
+
+    if (archivoEntrada.files.length > 0) {
+      this.archivoSeleccionado = archivoEntrada.files[0].name;
+    } else {
+      this.archivoSeleccionado = 'Sin archivos seleccionados';
+    }
+  }
+  cambiarColor(event: any) {
+    // Accede al elemento que disparó el evento
+    const inputElement = event.target;
+
+    // Cambia el color del fondo al perder el foco    
+    inputElement.style.borderColor = 'red';
+  }
+
+ 
 }
 

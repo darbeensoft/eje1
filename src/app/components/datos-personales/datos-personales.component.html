@@ -19,9 +19,10 @@
                     <img class="dp__img-image" src="../../../assets/img/user.svg" alt="Imagen de usuario">
 
                     <div class="dp__img-file">
-                        <input formControlName="file"  type="file" >
-                        <div class="file-name">Sin archivos seleccionados</div>
+                        <input formControlName="file" type="file" (change)="nombreArchivo($event)">
+                        <div class="file-name">{{ archivoSeleccionado }}</div>
                     </div>
+                    
                 </div>
                 <div class="dp__img-desc">
                     <span class="dp__img-description">Formatos permitidos: jpg, jpeg, png, svg, gif. El tamaño del archivo no debe superar 1 MB.</span>
@@ -46,7 +47,7 @@
             
                     <div class="dp__form-group">
                         <label class="dp__form-label" >Nombres</label>
-                        <input formControlName="nombre" class="dp__form-input" type="text" placeholder="Escribe aquí" >
+                        <input  formControlName="nombre" class="dp__form-input" type="text" placeholder="Escribe aquí" >
                     </div>
             
                     <div class="dp__form-group">

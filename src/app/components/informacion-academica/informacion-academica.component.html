@@ -15,7 +15,7 @@
                     
 
                     <div class="dp__form-group">
-                        <label class="dp__form-label" for="gender">Indíquenos su formación académica *</label>
+                        <label class="dp__form-label" >Indíquenos su formación académica *</label>
                         <select formControlName="fAcademica" class="dp__form-input dp__form-input--sinfondo" name="gender" required>
                             <option value="" disabled selected>Seleccionar formacion academica</option>
                             <option value="masculino">Profesional</option>
@@ -27,7 +27,7 @@
                    
 
                     <div class="dp__form-group">
-                        <label class="dp__form-label" for="address">Por favor de una manera breve indíquenos la
+                        <label class="dp__form-label" >Por favor de una manera breve indíquenos la
                             presentación de su hoja de vida*</label>
                         <input formControlName="presentacion"  class="dp__form-input dp__form-input--sinfondo" type="text" placeholder="Escribe aquí" required>
                     </div>
@@ -35,38 +35,38 @@
 
                 <div class="content__right">
                     <label class="dp__label-check" >Mencione las tres áreas de su mayor especialización *</label>
-                        <div class="dp__form-group-check">
-                            <input class="dp__form-input-check" type="checkbox"  >
-                            <label class="dp__form-label-check" for="check1">Estratégica</label>
-                        </div>
+                    <div class="dp__form-group-check">
+                        <input formControlName="estrategia" name="estrategia" class="dp__form-input-check" type="checkbox" id="check1" >
+                        <label class="dp__form-label-check" for="check1">Estratégica</label>
+                    </div>
 
                     <div class="dp__form-group-check">
-                        <input class="dp__form-input-check"  type="checkbox" >
+                        <input formControlName="estrategia" name="estrategia" class="dp__form-input-check"  type="checkbox"  id="check2">
                         <label class="dp__form-label-check" for="check2">Internacionalización</label>
                     </div>
 
                     <div class="dp__form-group-check">
-                        <input class="dp__form-input-check" type="checkbox">
+                        <input formControlName="estrategia"  name="estrategia" class="dp__form-input-check" type="checkbox" id="check3">
                         <label class="dp__form-label-check" for="check3">Financiera</label>
                     </div>
 
                     <div class="dp__form-group-check">
-                        <input class="dp__form-input-check" type="checkbox" >
+                        <input formControlName="estrategia" name="estrategia" class="dp__form-input-check" type="checkbox" id="check4">
                         <label class="dp__form-label-check" for="check4">Producción logística y operaciones</label>
                     </div>
 
                     <div class="dp__form-group-check">
-                        <input class="dp__form-input-check" type="checkbox" >
+                        <input formControlName="estrategia" name="estrategia"class="dp__form-input-check" type="checkbox" id="check5">
                         <label class="dp__form-label-check" for="check5">Gobierno corporativo</label>
                     </div>
 
                     <div class="dp__form-group-check">
-                        <input class="dp__form-input-check" type="checkbox" >
+                        <input formControlName="estrategia" name="estrategia" class="dp__form-input-check" type="checkbox" id="check6">
                         <label class="dp__form-label-check" for="check6">Mercadeo y ventas</label>
                     </div>
 
                     <div class="dp__form-group-check">                        
-                        <input class="dp__form-input-check" type="checkbox" >
+                        <input formControlName="estrategia" name="estrategia" class="dp__form-input-check" type="checkbox" id="check7">
                         <label class="dp__form-label-check" for="check7">Marketing digital</label>
                     </div>
 
@@ -79,8 +79,7 @@
         <div class="btns__form">
             <app-modal></app-modal>
             <button class="btn__cancel" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Cancelar</button>
-            <button (click)="onSubmit()"  type="submit" class="btn__next">Continuar</button>
-
+			<button (click)="onSubmit()"  type="submit" class="btn__next">Continuar</button>
         </div>
     </form>
 </div>

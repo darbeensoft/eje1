@@ -1,48 +1,17 @@
-/* 
-.main__header-content {
-    padding: 0;
-    margin: 0 auto;
-    width: 958px;
-    height: 43px;
-}
-
-.header-title__title {
-    text-align: left;
-    font-family: adobe-clean, sans-serif;
-    font-size: 3.4rem;
-    font-weight: 800;
-    color: var(--gris-textos-3d3d3d);
-    margin-bottom: 0rem;
-}
-
-.header-tile__description {
-    margin-top: 0.9rem;
-    font-weight: 500;
-    font-size: 2.1rem;
-    line-height: 1.1;
-    color: var(--gris-textos-3d3d3d);
-}
-.layout__main{
-    margin-top:1rem;
-}
- */
-
  ul, ol, a{
     list-style: none;
     text-decoration: none;
 }
 
 html {
-    /* esto es equivalente a 10px */
-    /* font-size: 62.5%; */
     margin: 0;
     padding: 0;
 }
+
 body{
     margin: 0;
     padding: 0;
 }
 
 
-/* estilos generales  */
 

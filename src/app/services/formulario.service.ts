@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators, AbstractControl   } from '@angular/forms';
 
 @Injectable({
   providedIn: 'root',
@@ -20,7 +20,7 @@ export class FormularioService {
       Tdocumento: ['', Validators.required],
       nacionalidad: ['', Validators.required],
       apellidos: ['', Validators.required],
-      email: ['', Validators.required, Validators.email],
+      email: ['', Validators.required],
       numeroContacto: ['', Validators.required],
     });
   }
@@ -28,10 +28,12 @@ export class FormularioService {
   crearFormularioInformacionAcademica(): FormGroup {
     return this.fb.group({
       fAcademica: ['', Validators.required],
-      presentacion: ['', Validators.required]
-      
+      presentacion: ['', Validators.required],
+      estrategia: ['', Validators.required],
+
     });
   }
+ 
 
   crearFormularioInformacionLaboral(): FormGroup {
     return this.fb.group({
@@ -41,9 +43,6 @@ export class FormularioService {
       profesion: ['', Validators.required],
       experiencia: ['', Validators.required],
       especialidad: ['', Validators.required],
-
-
-
     });
   }
   crearFormularioEmprendedor(): FormGroup {
@@ -59,14 +58,7 @@ export class FormularioService {
       tcolegio: ['', Validators.required],
       pNatural: ['', Validators.required],
       pJuridica: ['', Validators.required],
-      cCOlegio: ['', Validators.required]
-      
-      
-
-      
-
-
-
+      cCOlegio: ['', Validators.required] 
     });
   }
 

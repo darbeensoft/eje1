@@ -13,13 +13,13 @@
             <div class="dp__form-title">
                 <label class="dp__form-label">¿Que tipo de empresa es?*</label>
                 <div class="dp__radio-group">
-                    <input class="dp__radio-input" formControlName="pNatural" type="radio"  value="PN" >
+                    <input class="dp__radio-input" formControlName="tEmpresa" name="tEmpresa"   id="PN"  type="radio"  value="PN" >
                     <label class="dp__radio-label" >Persona natural</label>
             
-                    <input class="dp__radio-input" formControlName="pJuridica" type="radio"  value="PJ">
-                    <label class="dp__radio-label" >Persona juridíca</label>
+                    <input class="dp__radio-input" formControlName="tEmpresa" name="tEmpresa" id="PJ"  type="radio"  value="PJ" >
+                    <label class="dp__radio-label" >Persona jurídica</label>
 
-                    <input class="dp__radio-input" formControlName="cCOlegio" type="radio"  value="CO" checked>
+                    <input class="dp__radio-input" formControlName="tEmpresa" name="tEmpresa"  id="CO"  type="radio"  value="CO" >
                     <label class="dp__radio-label" >Colegio</label>
                 </div>
             </div>
@@ -95,10 +95,10 @@
                     <div class="dp__form-title">
                         <label class="dp__form-label">Tipo de colegio*</label>
                         <div class="dp__radio-group">
-                            <input class="dp__radio-input" formControlName="tcolegio" type="radio" id="tcolegio-pub" name="tcolegio" value="PU" >
+                            <input class="dp__radio-input" formControlName="tcolegio" type="radio"  name="tcolegio" value="PU" >
                             <label class="dp__radio-label" for="tcolegio-pub">Público</label>
                     
-                            <input class="dp__radio-input" formControlName="tcolegio" type="radio" id="tcolegio-pri" name="tcolegio" value="PRI">
+                            <input class="dp__radio-input" formControlName="tcolegio" type="radio" name="tcolegio" value="PRI">
                             <label class="dp__radio-label" for="tcolegio-pri">Privado</label>
         
                             
@@ -134,12 +134,14 @@
             </div>
         </div>
         <div class="btns__form">
-            <button class="btn__cancel">Cancelar</button>
+            <app-modal></app-modal>
+            <button class="btn__cancel" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Cancelar</button>
             <button (click)="onSubmit()"  type="submit" class="btn__next">Enviar</button>
             
         </div>
 
     </form>
 </div>
+
 
 <!--</div> -->

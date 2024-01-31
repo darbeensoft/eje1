@@ -56,7 +56,6 @@
      border: none;
      outline: none;
      background-color: #F1F1F1;
-     /* border-bottom: 2px solid #E8E8E8; */
      border-radius: 5px;
      -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
@@ -73,7 +72,6 @@
       margin-bottom: 5px;
   }
   .dp__form-input::placeholder {
-      /* padding-left: 20px; */
       color: #8A8A8A; 
       font-size: 14px; 
     }
@@ -90,7 +88,6 @@
   
       outline: none;
       background-color: transparent;
-      /* border-bottom: 2px solid #AFAFAF; */
       border-radius: 0;
       -webkit-border-radius: 0;
       -moz-border-radius: 0;
@@ -261,9 +258,6 @@
     background: #FCE2E2 0% 0% no-repeat padding-box;
     box-shadow: 0px 6px 5px -3px #00000029; 
     opacity: 1;
-    /* position: relative; */
-    /* left: -202px; */
-    /* top: -261px; */
     padding: 19px 105px;
     position: fixed;
     z-index: 9999;

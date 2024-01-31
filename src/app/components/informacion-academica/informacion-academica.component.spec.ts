@@ -20,4 +20,12 @@ describe('InformacionAcademicaComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it('debería mostrar una alerta de error de validación', () => {
+    component.showValidationErrorAlert();
+    expect(component.showAlert).toBe(true);
+  });
+  it('debería ocultar la alerta', () => {
+    component.hideAlert();
+    expect(component.showAlert).toBe(false);
+  });
 });
